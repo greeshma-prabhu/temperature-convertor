@@ -1,1 +1,1 @@
-# temperature-convertor
+this is a basic temperature convertor website where users can input a temperature value, choose the unit either celcius or fahrenheit, by clicking convert button they can see the converted temperaturr.# temperature-convertor
