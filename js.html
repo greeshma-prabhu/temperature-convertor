@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://localhost:51199/12e57fc2-e81f-4e2a-a27d-bfa4a94b9773/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!--<base href="http://localhost:51199/12e57fc2-e81f-4e2a-a27d-bfa4a94b9773/">--><base href=".">
+	<title>c.js</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./js_files/default.css" rel="stylesheet">
+	<link href="./js_files/line-numbers.css" rel="stylesheet">
+	<link href="./js_files/colour-scheme.css" rel="stylesheet">
+	<link href="./js_files/settings.css" rel="stylesheet">
+	
+	<script type="text/javascript">
+		function printAndClose(enabled) {
+			if (enabled) {
+				window.addEventListener("afterprint", (event) => {
+					fetch("completed").then(window.close);
+				});
+				setTimeout(window.print, 500);
+			}
+		} 
+	</script>
+</head>
+
+<body onload="printAndClose(true)">
+	<h3>c.js</h3>
+	<div>
+		<table class="hljs">
+<tbody><tr><td class="line-number">1</td><td class="line-text"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">convertTemperature</span>(<span class="hljs-params"></span>)<wbr> </span>{
+</td></tr>
+<tr><td class="line-number">2</td><td class="line-text">    <span class="hljs-keyword">var</span> temperature =<wbr> <span class="hljs-built_in">parseFloat</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"<wbr>inputTemperature"<wbr></span>)<wbr>.value)<wbr>;<wbr>
+</td></tr>
+<tr><td class="line-number">3</td><td class="line-text">    <span class="hljs-keyword">var</span> unit =<wbr> <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"<wbr>temperatureUnit"<wbr></span>)<wbr>.value;<wbr>
+</td></tr>
+<tr><td class="line-number">4</td><td class="line-text">    <span class="hljs-keyword">var</span> result;<wbr>
+</td></tr>
+<tr><td class="line-number">5</td><td class="line-text">
+</td></tr>
+<tr><td class="line-number">6</td><td class="line-text">    <span class="hljs-keyword">if</span> (unit =<wbr>=<wbr>=<wbr> <span class="hljs-string">"<wbr>celsius"<wbr></span>)<wbr> {
+</td></tr>
+<tr><td class="line-number">7</td><td class="line-text">        result =<wbr> (temperature * <span class="hljs-number">9</span> / <span class="hljs-number">5</span>)<wbr> + <span class="hljs-number">32</span>;<wbr>
+</td></tr>
+<tr><td class="line-number">8</td><td class="line-text">        <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"<wbr>result"<wbr></span>)<wbr>.textContent =<wbr> <span class="hljs-string">`<span class="hljs-subst">${temperature}<wbr></span> Celsius is equal to <span class="hljs-subst">${result}<wbr></span> Fahrenheit.`</span>;<wbr>
+</td></tr>
+<tr><td class="line-number">9</td><td class="line-text">    }<wbr> <span class="hljs-keyword">else</span> {
+</td></tr>
+<tr><td class="line-number">10</td><td class="line-text">        result =<wbr> (temperature - <span class="hljs-number">32</span>)<wbr> * <span class="hljs-number">5</span> / <span class="hljs-number">9</span>;<wbr>
+</td></tr>
+<tr><td class="line-number">11</td><td class="line-text">        <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"<wbr>result"<wbr></span>)<wbr>.textContent =<wbr> <span class="hljs-string">`<span class="hljs-subst">${temperature}<wbr></span> Fahrenheit is equal to <span class="hljs-subst">${result}<wbr></span> Celsius.`</span>;<wbr>
+</td></tr>
+<tr><td class="line-number">12</td><td class="line-text">    }<wbr>
+</td></tr>
+<tr><td class="line-number">13</td><td class="line-text">}<wbr></td></tr>
+</tbody></table>
+	</div>
+
+
+</body></html>
